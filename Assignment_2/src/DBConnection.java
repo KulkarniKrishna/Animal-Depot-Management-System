@@ -14,7 +14,7 @@ public class DBConnection {
             System.out.println("Message: " + e.getMessage());
         }
         // connect to Oracle
-        String username = "AnimalsDB";
+        String username = "ADMS";
         String password = "123";
         try {
             con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", username, password);
@@ -101,7 +101,7 @@ public class DBConnection {
         populateTable.add("insert into zoo values('137 Xizhimen Outer St', 'Beijing Zoo', 67890, 'Beijing', 'China')");
         populateTable.add("insert into zoo values('Hardenbergplatz 8', 'Berlin Zoological Garden', 78901, 'Berlin', 'Germany')");
         populateTable.add("insert into zoo values('Elliott Ave', 'Melbourne Zoo', 90123, 'Melbourne', 'Australia')");
-        populateTable.add("insert into zoo values('U TrojskÈho z·mku 3/120', 'Prague Zoo', 1242, 'Prague', 'Czech Republic')");
+        populateTable.add("insert into zoo values('U Trojsk√©ho z√°mku 3/120', 'Prague Zoo', 1242, 'Prague', 'Czech Republic')");
         populateTable.add("insert into site values(101, 'Area 1', 'food', '2000 Meadowvale Rd')");
         populateTable.add("insert into site values(102, 'Area 2 North', 'habitat', '2000 Meadowvale Rd')");
         populateTable.add("insert into site values(103, 'Area 2 South', 'habitat', '2000 Meadowvale Rd')");
